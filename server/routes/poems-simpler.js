@@ -76,4 +76,30 @@ router.post('/', (req, res) => {
 
 
 
+//! PUT request to update changes to selected whole poem
+router.put('/:poemId', (req, res) => {
+
+    const poemsData = readData();
+    const singlePoemId = req.params.poemId;
+    const updatedPoem = req.body;
+
+    const indexOfPoem = poemsData.findIndex(
+        poem => poem.data.id === singlePoemId
+    );
+
+    if (indexOfPoem === -1){
+        res.status(404)
+            .send(`Sorry, the poem with id ${singlePoemId} cannot be found`);
+        return;
+    }
+
+    poemsData[indexOfPoem] = updatedPoem;
+    writeData(poemsData);
+    res.status(200)
+        .json(updatedPoem)
+
+});
+
+
+
 module.exports = router;
