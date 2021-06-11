@@ -9,9 +9,10 @@ const readData = () => {
 };
 
 // callback to write data
-const writeData = () => {
+const writeData = (myData) => {
     fs.writeFileSync('./data/poems.json', JSON.stringify(myData))
 };
+
 
 
 //! GET request for list of poems
@@ -34,6 +35,7 @@ router.get('/', (_req, res) => {
 });
 
 
+
 //! GET request for single poem
 router.get('/:poemId', (req, res) => {
 
@@ -53,6 +55,24 @@ router.get('/:poemId', (req, res) => {
 
 });
 
+
+
+//! POST request to post poem
+router.post('/', (req, res) => {
+
+    const poemsData = readData();
+
+    const newPoem = {
+        id: uuidv4(),
+        ...req.body
+    }
+
+    poemsData.push(newPoem);
+    writeData(poemsData);
+    res.status(201)
+        .json(newPoem);
+
+});
 
 
 
