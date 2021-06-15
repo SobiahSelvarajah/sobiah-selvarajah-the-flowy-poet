@@ -17,11 +17,11 @@ const DiscoverPoetry = () => {
             method: 'GET',
             url:`${POEM_API_URL}/poems`
         })
-        .then(res => { console.log(res.data)
+        .then(res => { 
             setPoems(res.data)
             setLoading(false)
         })
-        
+
     },[]);
 
     return(
