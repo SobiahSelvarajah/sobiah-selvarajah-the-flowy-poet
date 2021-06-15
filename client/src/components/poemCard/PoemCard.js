@@ -9,7 +9,7 @@ const PoemCard = ({poems}) => {
     return (
         <section className="poemCard">
             {poems.map((poem)=> ( 
-            <div className="poemCard__container">
+            <div className="poemCard__container" key={poem.id}>
                 <img className="poemCard__image" src={poem.image} alt="pic of poem"></img>
                 <h2 className="poemCard__name">{poem.name}</h2>
                 <div className="poemCard__subheadings">
