@@ -30,9 +30,10 @@ const DiscoverPoetry = () => {
                 <p>It's loading</p>
             }
             { !loading && 
-                <>
+                <section>
+                    <div>Endless thoughts, boundless minds...</div>
                     <PoemCard poems={poems}/>
-                </>
+                </section>
             }
             
         </section>

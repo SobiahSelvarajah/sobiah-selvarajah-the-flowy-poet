@@ -1,13 +1,13 @@
 import React from 'react';
 
 import './PoemCard.scss'
-
+// funtionality to like and edit poem
 
 const PoemCard = ({poems}) => {
 
     
     return (
-        <section className="poemCard">
+        <main className="poemCard">
             {poems.map((poem)=> ( 
             <div className="poemCard__container" key={poem.id}>
                 <img className="poemCard__image" src={poem.image} alt="pic of poem"></img>
@@ -19,7 +19,7 @@ const PoemCard = ({poems}) => {
                 <button className="poemCard__button">View Poem</button>
             </div>
             ))}
-        </section>
+        </main>
     )
 }
 
