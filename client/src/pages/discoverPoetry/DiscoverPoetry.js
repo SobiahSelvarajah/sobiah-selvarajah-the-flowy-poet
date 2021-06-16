@@ -31,7 +31,7 @@ const DiscoverPoetry = () => {
             }
             { !loading && 
                 <section>
-                    <div>Endless thoughts, boundless minds...</div>
+                    <div>Endless thoughts, boundless minds</div>
                     <PoemCard poems={poems}/>
                 </section>
             }

@@ -12,7 +12,7 @@ const WelcomePage = () => {
                 src={mainLogo}
                 alt="logo"
             />
-            <p>hello</p>
+            <p>hellosjhdsajkhdkajhahd</p>
         </section>
     )
 
