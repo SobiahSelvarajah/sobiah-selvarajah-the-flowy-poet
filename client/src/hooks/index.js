@@ -14,8 +14,8 @@ const useFetch = (url, initialState) => {
         async function getPoems() {
             try {
                 const res = await axios.get(url)
-                const data = res.data
-                setPoems(data)
+                const poems = res.poems
+                setPoems(poems)
             } catch (err) {
                 setError(err.message)
             }
@@ -23,7 +23,7 @@ const useFetch = (url, initialState) => {
         getPoems()
     }, [url])
 
-    return { data, error }
+    return { poems, error }
 }
 
 export default useFetch;
