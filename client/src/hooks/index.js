@@ -9,13 +9,12 @@ const useFetch = (url, initialState) => {
     
     const [poems, setPoems] = useState(initialState)
     const [error, setError] = useState('')
-    console.log(poems);
 
     useEffect(() => {
         async function getPoems() {
             try {
                 const res = await axios.get(url)
-                const poems = res.poems
+                const poems = res.data
                 setPoems(poems)
             } catch (err) {
                 setError(err.message)
