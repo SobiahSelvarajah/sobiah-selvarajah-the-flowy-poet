@@ -21,12 +21,13 @@ router.get('/', (_req, res) => {
     const poemsData = readData();
 
     const poemsFiltered = poemsData.map(poem => {
-        return {
+
+        return { 
             id: poem.data.id,
-            // include image bit here
             name: poem.data.name,
+            image: poem.data.image,
             poet: poem.data.poet,
-            date: poem.data.date
+            date: poem.data.date,
         }
     })
     res.status(200)
