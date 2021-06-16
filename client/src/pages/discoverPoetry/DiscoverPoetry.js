@@ -42,7 +42,7 @@
 
 // export default DiscoverPoetry;
 
-import useFetch from '../../hooks';
+import useFetch from '../../hooks/index';
 import './DiscoverPoetry.scss';
 import PoemCard from '../../components/poemCard/PoemCard';
 
@@ -50,8 +50,16 @@ export const POEM_API_URL = process.env.REACT_APP_API_URL;
 
 const DiscoverPoetry = () => {
 
-    
-    
+    const { poems, error } = useFetch(POEM_API_URL, [])
+
+    // console.log(poems);
+    return(
+        <section className="discoverPoetry">
+            {error && <p>{error}</p>}
+            <div>Endless thoughts, boundless minds</div>
+            <PoemCard poems={poems}/>
+        </section>
+    )
 }
 
 export default DiscoverPoetry;
