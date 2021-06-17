@@ -1,18 +1,15 @@
 import React from 'react';
-import mainLogo from '../../assets/images/logo-files/standard_logo_files/Original.png';
+import ImportLogo from '../../components/importLogo/ImportLogo';
 import './WelcomePage.scss';
 
 
 const WelcomePage = () => {
 
     return(
-        <section className="welcomePage">
-            <img 
-                className="welcomePage__logo" 
-                src={mainLogo}
-                alt="logo"
-            />
+        <section className="welcomePage__container">
+            <ImportLogo />
             <p>hellosjhdsajkhdkajhahd</p>
+            
         </section>
     )
 
