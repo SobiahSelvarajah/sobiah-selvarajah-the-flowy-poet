@@ -1,4 +1,5 @@
 import React from 'react';
+import ImportIntroPoem from '../../components/importIntroPoem/ImportIntroPoem';
 import ImportLogo from '../../components/importLogo/ImportLogo';
 import './WelcomePage.scss';
 
@@ -6,11 +7,18 @@ import './WelcomePage.scss';
 const WelcomePage = () => {
 
     return(
-        <section className="welcomePage__container">
-            <ImportLogo />
-            <p>hellosjhdsajkhdkajhahd</p>
-            
+        <article className="welcomePage__container">
+        <section className="welcomePage__container-top">
+            <ImportLogo /> 
         </section>
+
+        <section className="welcomePage__container-bottom">
+            <ImportIntroPoem />
+        </section>
+
+        </article>
+
+
     )
 
 }

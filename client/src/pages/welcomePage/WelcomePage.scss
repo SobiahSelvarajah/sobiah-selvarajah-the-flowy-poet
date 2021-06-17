@@ -1,0 +1,23 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.welcomePage {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    &__container-top,
+    &__container-bottom {
+        padding: 100px 20px;
+    }
+    &__container-bottom {
+        display: flex;
+        justify-content: center;
+        background-color: $light_mint;
+    }
+}

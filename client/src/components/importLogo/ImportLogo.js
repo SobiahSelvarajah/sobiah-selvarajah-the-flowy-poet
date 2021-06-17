@@ -6,11 +6,11 @@ import './ImportLogo.scss';
 const ImportLogo = () => {
 
     return(
-            <img 
-                className="importLogo" 
-                src={mainLogo}
-                alt="logo"
-            />
+        <img 
+            className="importLogo" 
+            src={mainLogo}
+            alt="logo"
+        />
     )
 
 }
