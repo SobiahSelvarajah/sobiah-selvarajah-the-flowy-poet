@@ -5,6 +5,7 @@
             "name": "Life's Purpose",
             "image": "http://localhost:8080/images/yellow-rose.jpg",
             "date": "March 2020",
+            "email": "sobiahselvarajah@hotmail.co.uk",
             "poet": "Sobiah",
             "likes": 16,
             "stanzas": 3
@@ -62,6 +63,7 @@
             "name": "A Turtle's Tale",
             "image": "http://localhost:8080/images/ferris-sky.jpg",
             "date": "April 2020",
+            "email": "sobiahselvarajah@hotmail.co.uk",
             "poet": "Sobiah",
             "likes": 17,
             "stanzas": 1
@@ -91,6 +93,7 @@
             "name": "Destination New Beginning",
             "image": "http://localhost:8080/images/plum-blossom.jpg",
             "date": "May 2020",
+            "email": "sobiahselvarajah@hotmail.co.uk",
             "poet": "Sobiah",
             "likes": 20,
             "stanzas": 3
@@ -141,6 +144,7 @@
             "name": "Dearly Beloved",
             "image": "http://localhost:8080/images/red-rose.jpg",
             "date": "June 2020",
+            "email": "sobiahselvarajah@hotmail.co.uk",
             "poet": "Sobiah",
             "likes": 14,
             "stanzas": 7
@@ -204,6 +208,7 @@
             "name": "Take the Chance",
             "image": "http://localhost:8080/images/seoul.jpg",
             "date": "June 2020",
+            "email": "sobiahselvarajah@hotmail.co.uk",
             "poet": "Sobiah",
             "likes": 21,
             "stanzas": 1
@@ -246,6 +251,7 @@
             "name": "Precious Flower",
             "image": "http://localhost:8080/images/cherry-blossom.jpg",
             "date": "June 2020",
+            "email": "sobiahselvarajah@hotmail.co.uk",
             "poet": "Sobiah",
             "likes": 23,
             "stanzas": 1
@@ -284,6 +290,7 @@
             "name": "Love Yourself",
             "image": "http://localhost:8080/images/white-narcissus.jpg",
             "date": "June 2020",
+            "email": "sobiahselvarajah@hotmail.co.uk",
             "poet": "Sobiah",
             "likes": 22,
             "stanzas": 6
@@ -358,6 +365,7 @@
             "name": "Just do it",
             "image": "http://localhost:8080/images/dogwood.jpg",
             "date": "July 2020",
+            "email": "sobiahselvarajah@hotmail.co.uk",
             "poet": "Sobiah",
             "likes": 25,
             "stanzas": 1
@@ -386,6 +394,7 @@
             "name": "Be you",
             "image": "http://localhost:8080/images/sunset-people.jpg",
             "date": "July 2020",
+            "email": "sobiahselvarajah@hotmail.co.uk",
             "poet": "Sobiah",
             "likes": 26,
             "stanzas": 1
@@ -415,6 +424,7 @@
             "name": "Rainy Days",
             "image": "http://localhost:8080/images/hardenbergia.jpg",
             "date": "July 2020",
+            "email": "sobiahselvarajah@hotmail.co.uk",
             "poet": "Sobiah",
             "likes": 28,
             "stanzas": 1
@@ -461,6 +471,7 @@
             "name": "Hidden Pains",
             "image": "http://localhost:8080/images/beautiful-winter.jpg",
             "date": "July 2020",
+            "email": "sobiahselvarajah@hotmail.co.uk",
             "poet": "Sobiah",
             "likes": 30,
             "stanzas": 1
@@ -496,6 +507,7 @@
             "name": "Always Remember",
             "image": "http://localhost:8080/images/nectarine-blossoms.jpg",
             "date": "July 2020",
+            "email": "sobiahselvarajah@hotmail.co.uk",
             "poet": "Sobiah",
             "likes": 20,
             "stanzas": 4
