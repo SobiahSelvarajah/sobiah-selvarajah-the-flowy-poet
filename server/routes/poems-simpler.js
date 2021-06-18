@@ -30,7 +30,7 @@ router.get('/', (_req, res) => {
             date: poem.data.date,
         }
     })
-    console.log( "first poem ", poemsFiltered[0].image)
+
     res.status(200)
         .json(poemsFiltered);
 
