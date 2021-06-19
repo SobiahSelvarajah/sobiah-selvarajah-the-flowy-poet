@@ -1,17 +1,41 @@
-import React, { useState } from 'react';
+import React from 'react';
+import useFetch from '../../hooks/index';
+import useFormFields from '../../hooks/formFields';
 
 
-const PoemForm = (props) => {
+import './PoemForm.scss';
 
-    const [poem, setPoem] = useState("");
+const POEM_API_URL = process.env.REACT_APP_API_URL;
 
+const PoemForm = () => {
+    
+    const { poems, error } = useFetch(`${POEM_API_URL}/poems`, [])
+
+    const { fields, handleChange, clearForm } = useFormFields({
+        name: '',
+        email: '',
+        date: '',
+        poet: '',
+        content: ''
+    })
+
+    // handleClick
     const handleSubmit = (e) => {
-        e.preventDefault();
-        alert(`Submitting Poem ${poem}`)
+        // e.preventDefaultr();
+        alert(`Submitting Poem ${name}`)
+        clearForm()
     }
+
+    const { 
+        name,
+        email,
+        poet,
+        content
+    } = fields
 
     return(
         <form onSubmit={handleSubmit}>
+            {error && <p>{error}</p>}
             <section className="poemSubmitForm__container">
                 <h2 className="poemSubmitForm__heading">
                     Here's your chance to inspire others by spreading your poetic wings...
@@ -27,7 +51,6 @@ const PoemForm = (props) => {
                         htmlFor="username"
                         className="poemSubmitForm__username">
                             Your Name
-                        <span className="poemSubmitForm__star">*</span>
                     </label>
                     <input 
                         type="text"
@@ -35,13 +58,14 @@ const PoemForm = (props) => {
                         id="formUsername"
                         name="name"
                         placeholder="e.g. The Flowy Poet"
+                        value={poet}
+                        onChange={handleChange}
                         required
                     />
                     <label 
                         htmlFor="email" 
                         className="poemSubmitForm__user-email">
                             Your Email
-                        <span className="poemSubmitForm__star">*</span>
                     </label>
                     <input 
                         type="email"
@@ -49,6 +73,8 @@ const PoemForm = (props) => {
                         id="formUserEmail"
                         placeholder="e.g. theFlowyPoet@gmail.com"
                         maxLength="50"
+                        value={email}
+                        onChange={handleChange}
                         required
                     />
                 </div>
@@ -60,7 +86,6 @@ const PoemForm = (props) => {
                         htmlFor="poemName"
                         className="poemSubmitForm__poem-name">
                             Name
-                        <span className="poemSubmitForm__star">*</span>
                     </label>
                     <input 
                         type="text"
@@ -68,13 +93,14 @@ const PoemForm = (props) => {
                         id="formPoemName"
                         name="poemName"
                         placeholder="e.g. Fireflies"
+                        value={name}
+                        onChange={handleChange}
                         required
                     />
                     <label 
                         htmlFor="poem"
                         className="poemSubmitForm__poem">
                             Poem
-                        <span className="poemSubmitForm__star">*</span>
                     </label>
                     <textarea
                         type="text"
@@ -82,6 +108,8 @@ const PoemForm = (props) => {
                         id="formPoem"
                         name="poem"
                         placeholder="e.g I'll be my own light&#10;my own little firefly"
+                        value={content}
+                        onChange={handleChange}
                         required
                     ></textarea>
                     <label 

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+// import NavLinks from '../navLinks/NavLinks';
 
 
 const Ul = styled.ul`
@@ -18,7 +19,7 @@ const Ul = styled.ul`
 
 
 
-    li {
+    a {
         font-family: 'Dancing Script Regular';
         font-size: 28px;
         color: #FFF;
@@ -32,18 +33,25 @@ const RightNav = ({ open }) => {
     return (
 
         <Ul open={open}>
-            <li>
+            {/* <NavLinks /> */}
+            <a 
+                href='/'
+            >
                 Welcome Page
-            </li>
-            <li>
+            </a>
+            <a
+                href='/discoverPoetry'
+            >
                 Discover Poetry
-            </li>
-            <li>
+            </a>
+            <a
+                href='/poemForm'
+            >
                 Submit your poems
-            </li>
-            <li>
+            </a>
+            {/* <a>
                 About me
-            </li>
+            </a> */}
         </Ul>
     )
 }
