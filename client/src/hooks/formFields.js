@@ -5,10 +5,13 @@ const useFormFields = (initialState) => {
     const [fields, setFields] = useState(initialState)
 
 
-    const handleChange = e => {
+    const handleFieldChange = e => {
         setFields({ 
             ...fields, 
-            [e.target.name]: e.target.value
+            [e.target.email]: e.target.value,
+            [e.target.poemName]: e.target.value,
+            [e.target.poet]: e.target.value,
+            [e.target.content]: e.target.value
         })
     }
 
@@ -19,7 +22,7 @@ const useFormFields = (initialState) => {
 
 
     return {
-        fields, handleChange, clearForm,
+        fields, handleFieldChange, clearForm
     }
 
 }   

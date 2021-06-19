@@ -11,23 +11,22 @@ const PoemForm = () => {
     
     const { poems, error } = useFetch(`${POEM_API_URL}/poems`, [])
 
-    const { fields, handleChange, clearForm } = useFormFields({
-        name: '',
+    const { fields, handleFieldChange, clearForm } = useFormFields({
+        poemName: '',
         email: '',
-        date: '',
         poet: '',
         content: ''
     })
 
     // handleClick
     const handleSubmit = (e) => {
-        // e.preventDefaultr();
-        alert(`Submitting Poem ${name}`)
+        e.preventDefault();
+        alert(`Submitting Poem ${poemName}`)
         clearForm()
     }
 
     const { 
-        name,
+        poemName,
         email,
         poet,
         content
@@ -35,6 +34,7 @@ const PoemForm = () => {
 
     return(
         <form onSubmit={handleSubmit}>
+        
             {error && <p>{error}</p>}
             <section className="poemSubmitForm__container">
                 <h2 className="poemSubmitForm__heading">
@@ -59,7 +59,7 @@ const PoemForm = () => {
                         name="name"
                         placeholder="e.g. The Flowy Poet"
                         value={poet}
-                        onChange={handleChange}
+                        onChange={handleFieldChange}
                         required
                     />
                     <label 
@@ -74,7 +74,7 @@ const PoemForm = () => {
                         placeholder="e.g. theFlowyPoet@gmail.com"
                         maxLength="50"
                         value={email}
-                        onChange={handleChange}
+                        onChange={handleFieldChange}
                         required
                     />
                 </div>
@@ -93,8 +93,8 @@ const PoemForm = () => {
                         id="formPoemName"
                         name="poemName"
                         placeholder="e.g. Fireflies"
-                        value={name}
-                        onChange={handleChange}
+                        value={poemName}
+                        onChange={handleFieldChange}
                         required
                     />
                     <label 
@@ -109,7 +109,7 @@ const PoemForm = () => {
                         name="poem"
                         placeholder="e.g I'll be my own light&#10;my own little firefly"
                         value={content}
-                        onChange={handleChange}
+                        onChange={handleFieldChange}
                         required
                     ></textarea>
                     <label 

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-// import NavLinks from '../navLinks/NavLinks';
+
 
 
 const Ul = styled.ul`
@@ -33,7 +33,6 @@ const RightNav = ({ open }) => {
     return (
 
         <Ul open={open}>
-            {/* <NavLinks /> */}
             <a 
                 href='/'
             >

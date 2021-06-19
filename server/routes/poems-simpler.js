@@ -24,7 +24,7 @@ router.get('/', (_req, res) => {
 
         return { 
             id: poem.data.id,
-            name: poem.data.name,
+            poemName: poem.data.poemName,
             image: poem.data.image,
             poet: poem.data.poet,
             date: poem.data.date,
