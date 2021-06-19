@@ -1,0 +1,22 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.poemCard {
+
+    &__container {
+        padding: 40px;
+    }
+
+    &__image {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    &__subheadings {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

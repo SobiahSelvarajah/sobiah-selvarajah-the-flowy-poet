@@ -14,13 +14,14 @@ const PoemForm = () => {
     const { fields, handleFieldChange, clearForm } = useFormFields({
         poemName: '',
         email: '',
+        date: '',
         poet: '',
         content: ''
     })
 
     // handleClick
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const handleSubmit = () => {
+        // e.preventDefault();
         alert(`Submitting Poem ${poemName}`)
         clearForm()
     }
@@ -33,8 +34,8 @@ const PoemForm = () => {
     } = fields
 
     return(
-        <form onSubmit={handleSubmit}>
-        
+        // <form onSubmit={handleSubmit}>
+        <form>
             {error && <p>{error}</p>}
             <section className="poemSubmitForm__container">
                 <h2 className="poemSubmitForm__heading">

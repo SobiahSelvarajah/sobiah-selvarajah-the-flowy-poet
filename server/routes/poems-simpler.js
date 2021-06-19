@@ -27,7 +27,8 @@ router.get('/', (_req, res) => {
             poemName: poem.data.poemName,
             image: poem.data.image,
             poet: poem.data.poet,
-            date: poem.data.date,
+            likes: poem.data.likes,
+            content: poem.content
         }
     })
 

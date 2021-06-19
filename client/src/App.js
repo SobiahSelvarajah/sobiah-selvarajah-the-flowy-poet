@@ -8,9 +8,6 @@ import PoemForm from './pages/poemForm/PoemForm';
 import './App.scss';
 
 
-
-
-
 const App = () => {
 
   return(
