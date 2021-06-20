@@ -11,7 +11,7 @@ const PoemForm = () => {
     
     const { poems, error } = useFetch(`${POEM_API_URL}/poems`, [])
 
-    const { fields, handleFieldChange, clearForm } = useFormFields({
+    const { fields, handleField, clearForm } = useFormFields({
         poemName: '',
         email: '',
         date: '',
@@ -60,7 +60,7 @@ const PoemForm = () => {
                         name="name"
                         placeholder="e.g. The Flowy Poet"
                         value={poet}
-                        onChange={handleFieldChange}
+                        onChange={handleField}
                         required
                     />
                     <label 
@@ -75,7 +75,7 @@ const PoemForm = () => {
                         placeholder="e.g. theFlowyPoet@gmail.com"
                         maxLength="50"
                         value={email}
-                        onChange={handleFieldChange}
+                        onChange={handleField}
                         required
                     />
                 </div>
@@ -95,7 +95,7 @@ const PoemForm = () => {
                         name="poemName"
                         placeholder="e.g. Fireflies"
                         value={poemName}
-                        onChange={handleFieldChange}
+                        onChange={handleField}
                         required
                     />
                     <label 
@@ -110,7 +110,7 @@ const PoemForm = () => {
                         name="poem"
                         placeholder="e.g I'll be my own light&#10;my own little firefly"
                         value={content}
-                        onChange={handleFieldChange}
+                        onChange={handleField}
                         required
                     ></textarea>
                     <label 

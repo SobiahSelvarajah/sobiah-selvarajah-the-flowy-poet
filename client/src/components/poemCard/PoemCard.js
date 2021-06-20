@@ -16,7 +16,10 @@ const PoemCard = ({poems, handleClick}) => {
                 <h2 className="poemCard__name">{poem.poemName}</h2>
                 <div className="poemCard__subheadings">
                     <p className="poemCard__poet">{poem.poet}</p>
-                    <p className="poemCard__date">{poem.likes}</p>
+                    <div className="poemCard__likes-container">
+                        <button className="poemCard__likes-button">❤️ Like</button>
+                        <p className="poemCard__likes">{poem.likes}</p>
+                    </div>
                 </div>
                 <div className="poemCard__poem-collapsible">
                     <button onClick={() => handleClick(poem.id)} className="poemCard__poem-button">View Poem</button>
