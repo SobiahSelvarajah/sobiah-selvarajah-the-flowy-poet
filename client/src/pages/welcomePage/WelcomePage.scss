@@ -11,10 +11,17 @@
         
     }
 
-    &__container-top,
+    &__container-top {
+        padding: 250px 20px 150px 20px;
+    }
+
+
+
     &__container-bottom {
         padding: 100px 20px;
     }
+
+
     &__container-bottom {
         display: flex;
         justify-content: center;
