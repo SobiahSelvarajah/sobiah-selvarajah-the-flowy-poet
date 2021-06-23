@@ -2,6 +2,8 @@
 import React from 'react';
 import PoemFormInputs from './PoemFormInputs';
 
+import './PoemFormHeader.scss';
+
 const PoemFormHeader = ({
     isEdit,
     poemName,

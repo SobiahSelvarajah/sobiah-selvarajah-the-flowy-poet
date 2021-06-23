@@ -1,6 +1,6 @@
 
 import {useState, useEffect} from 'react'
-import useFetch from '../../hooks/index';
+import { useFetch, usePut} from '../../hooks/index';
 import { uuid } from 'uuidv4';
 import './DiscoverPoetry.scss';
 import PoemCard from '../../components/poemCard/PoemCard';
@@ -73,6 +73,8 @@ const DiscoverPoetry = () => {
         clearInput();
     };
     
+
+
     const editCurrentPoem = (newPoem) => {
         setPoemsList(
             poemsList.map((poem) => 
@@ -81,27 +83,41 @@ const DiscoverPoetry = () => {
         );
     };
 
+    //axios request to post poem
+    // const handleAddPoem = (e) => {
+    //     e.preventDefault();
+    //     setPoemsList
+    // }
+
     const addPoem =(newPoem) => {
         setPoemsList([newPoem, ...poemsList]);
     };
     
 
     return(
-        <section className="discoverPoetry">
+        <section className="discoverPoetry__section">
             {error && <p>{error}</p>}
-            <PoemFormHeader 
-                isEdit={isEdit}
-                poemName={poemName}
-                setPoemName={setPoemName}
-                poet={poet}
-                setPoet={setPoet}
-                content={content}
-                setContent={setContent}
-                clearInput={clearInput}
-                handleAddOrEdit={handleAddOrEdit}
-            />
-            <div>Endless thoughts, boundless minds</div>
-            <PoemCard handleClick={handleClick} poems={poemsList}/>
+            <div className="discoverPoetry__form">
+                <PoemFormHeader 
+                    isEdit={isEdit}
+                    poemName={poemName}
+                    setPoemName={setPoemName}
+                    poet={poet}
+                    setPoet={setPoet}
+                    content={content}
+                    setContent={setContent}
+                    clearInput={clearInput}
+                    handleAddOrEdit={handleAddOrEdit}
+                />
+            </div>
+            <div className="discoverPoetry__poems">
+                <div>Endless thoughts, boundless minds...</div>
+                <PoemCard 
+                    poems={poemsList}
+                    handleClick={handleClick} 
+                    handleEditClick={handleEditClick}
+                />
+            </div>
         </section>
     )
 }

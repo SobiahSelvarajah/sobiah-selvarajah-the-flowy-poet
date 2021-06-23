@@ -2,7 +2,7 @@
 import './PoemCard.scss'
 // funtionality to like and edit poem
 
-const PoemCard = ({poems, handleClick}) => {
+const PoemCard = ({poems, handleClick, handleEditClick}) => {
 
     return (
         <main className="poemCard">
@@ -25,7 +25,13 @@ const PoemCard = ({poems, handleClick}) => {
                     <button onClick={() => handleClick(poem.id)} className="poemCard__poem-button">View Poem</button>
                     {poem.isOpen && <div className="poemCard__content">{poem.isOpen && poem.content}</div> }
                 </div>
-
+                <button
+                    className="poemCard__button-edit"
+                    onClick={handleEditClick}
+                    value={poem.id}
+                >
+                    Edit Poem
+                </button>
                 {/* when you click on the heart emoji, adds like count */}
             </section>
             ))}

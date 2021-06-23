@@ -43,11 +43,11 @@ const RightNav = ({ open }) => {
             >
                 Discover Poetry
             </a>
-            <a
+            {/* <a
                 href='/poemForm'
             >
                 Submit your poems
-            </a>
+            </a> */}
             {/* <a>
                 About me
             </a> */}

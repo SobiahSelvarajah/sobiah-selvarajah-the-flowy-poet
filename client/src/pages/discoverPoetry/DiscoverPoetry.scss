@@ -1,0 +1,23 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+
+.discoverPoetry {
+
+    &__section {
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    &__form {
+        background-color: $light_blue;
+        color: $white;
+        padding: 60px;
+    }
+
+
+}

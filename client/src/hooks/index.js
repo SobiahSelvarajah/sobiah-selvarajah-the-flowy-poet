@@ -5,7 +5,7 @@ import axios from 'axios';
 //! fetches the data 
 //! sets errors if there is any
 
-const useFetch = (url, initialState) => {
+export const useFetch = (url, initialState) => {
     
     const [poems, setPoems] = useState(initialState)
     const [error, setError] = useState('')
@@ -26,4 +26,27 @@ const useFetch = (url, initialState) => {
     return { poems, error }
 }
 
-export default useFetch;
+
+
+//put request
+// export const usePut = (url, initialState) => {
+    
+//     const [poems, setPoems] = useState(initialState)
+//     const [error, setError] = useState('')
+
+//     useEffect(() => {
+//         async function getPoems() {
+//             try {
+//                 const res = await axios.get(url)
+//                 const poems = res.data
+//                 setPoems(poems)
+//             } catch (err) {
+//                 setError(err.message)
+//             }
+//         }
+//         getPoems()
+//     }, [url])
+
+//     return { poems, error }
+// }
+
