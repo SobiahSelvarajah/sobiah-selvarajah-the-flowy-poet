@@ -111,7 +111,7 @@ const DiscoverPoetry = () => {
                 />
             </div>
             <div className="discoverPoetry__poems">
-                <div>Endless thoughts, boundless minds...</div>
+                <div className="discoverPoetry__heading">Become inspired...</div>
                 <PoemCard 
                     poems={poemsList}
                     handleClick={handleClick} 

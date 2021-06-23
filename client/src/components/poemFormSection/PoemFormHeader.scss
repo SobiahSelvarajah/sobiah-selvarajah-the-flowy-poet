@@ -3,9 +3,14 @@
 @use '../../partials/textstyles' as *;
 @use '../../partials/typeface' as *;
 
-.PoemFormHeader {
+.poemFormHeader {
     
-    &__container {
-        background-color: $light_mint;
+    // &__container {
+    //     background-color: $light_mint;
+    // }
+
+    &__heading {
+        font-family: 'Montserrat Medium Italic';
+        font-size: $h1_text_size_m;
     }
 }
