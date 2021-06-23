@@ -1,0 +1,45 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+
+.poemFormInputs {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__subcontainer {
+        padding: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__poet,
+    &__poemName,
+    &__poem {
+        padding-right: 20px;
+    }
+
+    &__poet-input,
+    &__poemName-input {
+        padding: 10px;
+    }
+
+    &__poem-input {
+        resize: none;
+        padding-bottom: 50px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__button {
+        width: 150px;
+    }
+
+}

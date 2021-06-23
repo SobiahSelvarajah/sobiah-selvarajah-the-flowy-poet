@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 import Burger from '../burger/Burger';
 
+import blackLogo from '../../assets/images/logo-files/resizable_vector_files/Black.svg'
+
 
 
 
@@ -12,20 +14,19 @@ const Nav = styled.nav`
     width: 100%;
     height: 65px;
     border-bottom: 2px solid #D3D3D3;
-
-    .logo {
-        padding: 15px 0;
-        position: fixed;
-    }
+    background-color: #0AC5A8;
+    position: fixed;
+    padding: 10px;
 
 `;
 
 const NavBar = () => {
     return (
         <Nav>
-            <div className="logo">
-                Nav Bar
-            </div>
+            <img 
+                className="logo" 
+                src={blackLogo}>
+            </img>
             <Burger />
         </Nav>
     )

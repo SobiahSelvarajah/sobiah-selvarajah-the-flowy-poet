@@ -1,5 +1,7 @@
 
-import React from 'react'
+import React from 'react';
+
+import './PoemFormInputs.scss';
 
 const PoemFormInputs = ({
     isEdit,
@@ -15,8 +17,7 @@ const PoemFormInputs = ({
     const buttonContent = isEdit ? 'Change' : 'Add';
 
     return (
-        <form>
-            
+        <div className="poemFormInputs__container">
             <div className="poemFormInputs__subcontainer">
                 <label 
                     htmlFor="poet"
@@ -65,19 +66,21 @@ const PoemFormInputs = ({
                     required
                 ></textarea>
             </div>
-            <button 
-                className="poemFormInputs__button"
-                onClick={hamdleAddOrEdit}
-            >
-                {buttonContent}
-            </button>
-            <button
-                className="poemFormInputs__button"
-                onClick={clearInput}
-            >
-                Clear
-            </button>
-        </form>
+            <div className="poemFormInputs__buttons">
+                <button 
+                    className="poemFormInputs__button"
+                    onClick={hamdleAddOrEdit}
+                >
+                    {buttonContent}
+                </button>
+                <button
+                    className="poemFormInputs__button"
+                    onClick={clearInput}
+                >
+                    Clear
+                </button>
+            </div>
+        </div>
     )
 }
 

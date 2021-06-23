@@ -6,17 +6,11 @@
 
 .discoverPoetry {
 
-    &__section {
-        @include tablet {
-            display: flex;
-            flex-direction: row;
-        }
-    }
-
     &__form {
         background-color: $light_blue;
         color: $white;
-        padding: 60px;
+        padding: 100px 60px 60px 60px;
+
     }
 
     &__poems {
@@ -28,6 +22,8 @@
     &__heading {
         font-family: 'Dancing Script Regular';
         font-size: $h1_text_size_m;
+        line-height: $h1_line_height_m;
+        padding-left: 40px;
         @include tablet {
             font-size: $h1_text_size_dt;
         }
