@@ -24,7 +24,12 @@ const Ul = styled.ul`
         font-size: 28px;
         color: #FFF;
         line-height: 36px;
-        padding: 40px 10px;       
+        padding: 40px 10px; 
+        text-decoration: none;      
+    }
+
+    a:hover {
+        text-decoration: underline;
     }
 `;
 
@@ -43,14 +48,11 @@ const RightNav = ({ open }) => {
             >
                 Discover Poetry
             </a>
-            {/* <a
-                href='/poemForm'
+            <a
+                href='/dictionary'
             >
-                Submit your poems
-            </a> */}
-            {/* <a>
-                About me
-            </a> */}
+                Dictionary
+            </a>
         </Ul>
     )
 }
