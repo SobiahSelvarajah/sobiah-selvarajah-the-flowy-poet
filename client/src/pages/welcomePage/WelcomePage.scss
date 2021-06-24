@@ -8,17 +8,28 @@
     &__container {
         display: flex;
         flex-direction: column;
-        
+        @include tablet {
+            flex-direction: row;
+        }
     }
 
     &__container-top {
         padding: 250px 20px 150px 20px;
+        @include tablet {
+            display: flex;
+            justify-content: center;
+            padding: 240px 20px 240px 20px;
+        }
     }
 
 
 
     &__container-bottom {
         padding: 100px 20px;
+        @include tablet {
+            align-items: center;
+            width: -webkit-fill-available;
+        }
     }
 
 
@@ -26,5 +37,14 @@
         display: flex;
         justify-content: center;
         background-color: $light_mint;
+
+    }
+
+    &__positioning {
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+        }
+        
     }
 }

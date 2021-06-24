@@ -14,7 +14,8 @@ const PoemFormHeader = ({
     setContent,
     clearInput,
     handleAddOrEdit,
-}) => {
+}) => { 
+    console.log(handleAddOrEdit);
     return (
         <section className="poemFormHeader__container">
             <h2 className="poemFormHeader__heading">

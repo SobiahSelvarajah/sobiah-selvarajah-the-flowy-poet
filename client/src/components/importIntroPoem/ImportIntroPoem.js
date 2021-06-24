@@ -6,7 +6,7 @@ import './ImportIntroPoem.scss';
 const ImportIntroPoem = () => {
 
     return(
-            <p className="importIntroPoem">
+            <p className="importIntroPoem__text">
                 All my life
                 <br/>
                 I've been lost and alone,

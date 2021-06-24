@@ -27,6 +27,29 @@ export const useFetch = (url, initialState) => {
 }
 
 
+// export function addPost(url) {
+//     const [poet, setPoet] = useState('');
+//     const [poemName, setPoemName] = useState('');
+//     const [content, setContent] = useState('');
+
+//     function onPostPoem (e) {
+//         e.preventDefault();
+//         const postPoem = {
+//             poet,
+//             poemName,
+//             content
+//         };
+//         axios
+//             .post(
+//                 url, postPoem
+//             )
+//             .then((res) => {
+//                 console.log(res);
+//             })
+//     }
+// }
+
+
 
 //put request
 // export const usePut = (url, initialState) => {

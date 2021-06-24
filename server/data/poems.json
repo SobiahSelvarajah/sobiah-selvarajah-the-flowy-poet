@@ -1,532 +1,68 @@
 [
     {
-        "data": {
-            "id": "1",
-            "poemName": "Life's Purpose",
-            "image": "http://localhost:8080/images/yellow-rose.jpg",
-            "likes": 16,
-            "email": "sobiahselvarajah@hotmail.co.uk",
-            "poet": "Sobiah",
-            "stanzas": 3
-        },        
-        "content": [
-            [
-                "What truly defines us as humans?",
-                "Is it love...or hate?",
-                "Our dreams...or our nightmares?",
-                "Is it our sins...or our passions?",
-                "Our hirearchy...our wealth?",
-                "Our social media",
-                "Or maybe our lack thereof?",
-                "Jobs, education...",
-                "Family or friends?"
-            ],
-            [
-                "There are no right or",
-                "wrong answers,",
-                "We choose to create",
-                "Our own definitions.",
-                "Some may agree to disagree,",
-                "But we are all human",
-                "Breathe air",
-                "Bleed red,",
-                "Yet we are uniquely different,",
-                "Beautifully colourful",
-                "Through the mind and soul."
-            ],
-            [
-                "Every existence is meaningful,",
-                "Whether it be good or bad.",
-                "So only one question remains...",
-                "What is your purpose?"
-            ]
-        ],
-        "comments": [
+        "id":"1",
+        "poemName":"Life's Purpose",
+        "image":"http://localhost:8080/images/yellow-rose.jpg",
+        "likes":16,
+        "email":"sobiahselvarajah@hotmail.co.uk",
+        "poet":"Sobiah",
+        "stanzas":3,
+        "content":
+            [["What truly defines us as humans?\nIs it love...or hate?\nOur dreams...or our nightmares?\nIs it our sins...or our passions?\nOur hirearchy...our wealth?\nOur social media\nOr maybe our lack thereof?\nJobs, education...\nFamily or friends?\n\nThere are no right or\nwrong answers,\nWe choose to create\nOur own definitions.\nSome may agree to disagree,\nBut we are all human\nBreathe air\nBleed red,\nYet we are uniquely different,\nBeautifully colourful\nThrough the mind and soul.\n\nEvery existence is meaningful,\nWhether it be good or bad.\nSo only one question remains...\nWhat is your purpose?"
+            ]],
+        "comments":[
             {
-                "name": "vr_vrites",
-                "comment": "Such a profound piece🔥...best wishes going forward 🎉",
-                "id": "1ab6d9f6",
-                "timestamp": ""
+                "name":"vr_vrites",
+                "comment":"Such a profound piece🔥...best wishes going forward 🎉",
+                "id":"1ab6d9f6",
+                "timestamp":""
             },
             {
-                "name": "sinking_sonnet",
-                "comment": "Love this ❤️ congratulations on your first post 👏",
-                "id": "1oa6m9i6",
-                "timestamp": ""
+                "name":"sinking_sonnet",
+                "comment":"Love this ❤️ congratulations on your first post 👏",
+                "id":"1oa6m9i6",
+                "timestamp":""
             }
         ]
     },
     {
-        "data": {
-            "id": "2",
-            "poemName": "A Turtle's Tale",
-            "image": "http://localhost:8080/images/ferris-sky.jpg",
-            "likes": 17,
-            "email": "sobiahselvarajah@hotmail.co.uk",
-            "poet": "Sobiah",
-            "stanzas": 1
-        },        
-        "content": [
-            [
-                "There's no point",
-                "rushing ingenuity,",
-                "the turtle may be slow,",
-                "but will end up",
-                "as the most victorious",
-                "of them all."
-            ]
-        ],
-        "comments": [
+        "id":"2",
+        "poemName":"A Turtle's Tale",
+        "image":"http://localhost:8080/images/ferris-sky.jpg",
+        "likes":17,
+        "email":"sobiahselvarajah@hotmail.co.uk",
+        "poet":"Sobiah",
+        "stanzas":1,
+        "content":
+            [["There's no point\nrushing ingenuity,\nthe turtle may be slow,\nbut will end up\nas the most victorious\nof them all."]],
+        "comments":[
             {
-                "name": "spells.and.enchantments",
-                "comment": "This post👏❤️",
-                "id": "9us5j2p0",
-                "timestamp": ""
+                "name":"spells.and.enchantments",
+                "comment":"This post👏❤️",
+                "id":"9us5j2p0",
+                "timestamp":""
             }
         ]
     },
     {
-        "data": {
-            "id": "3",
-            "poemName": "Destination New Beginning",
-            "image": "http://localhost:8080/images/plum-blossom.jpg",
-            "likes": 20,
-            "email": "sobiahselvarajah@hotmail.co.uk",
-            "poet": "Sobiah",
-            "stanzas": 3
-        },        
-        "content": [
-            [
-                "Every journey has a",
-                "beginning,",
-                "with an unforseen future.",
-                "But do not be disheartened,",
-                "one must always gather courage",
-                "to take the first step forward,",
-                "to slowly learn to walk",
-                "before running",
-                "into the unknown."
-            ],
-            [
-                "Falling is inevitable,",
-                "but to pursue happiness",
-                "a price must be paid,",
-                "whether it be by blood,",
-                "sweat or tears,",
-                "the silver spoon of prosperity",
-                "must be rightfully earned."
-            ],
-            [
-                "I wish you luck and good fortune",
-                "my dear friend,",
-                "success will bring you great joy,",
-                "but never forget",
-                "the pain and suffering endured,",
-                "on this sacred path",
-                "to your ultimate destiny."
-            ]
+        "id":"3",
+        "poemName":"Destination New Beginning",
+        "image":"http://localhost:8080/images/plum-blossom.jpg",
+        "likes":20,
+        "email":"sobiahselvarajah@hotmail.co.uk",
+        "poet":"Sobiah",
+        "stanzas":3,
+        "content":[
+            ["Every journey has a\nbeginning,\nwith an unforseen future.\nBut do not be disheartened,\none must always gather courage\nto take the first step forward,\nto slowly learn to walk\nbefore running\ninto the unknown.\n\nFalling is inevitable,\nbut to pursue happiness\na price must be paid,\nwhether it be by blood,\nsweat or tears,\nthe silver spoon of prosperity\nmust be rightfully earned.\n\nI wish you luck and good fortune\nmy dear friend,\nsuccess will bring you great joy,\nbut never forget\nthe pain and suffering endured,\non this sacred path\nto your ultimate destiny."]
         ],
-        "comments": [
+        "comments":[
             {
-                "name": "sauryavat",
-                "comment": "Well penned 🌻",
-                "id": "3en7q0x2",
-                "timestamp": ""
+                "name":"sauryavat",
+                "comment":"Well penned 🌻",
+                "id":"3en7q0x2",
+                "timestamp":""
             }
         ]
-    },
-    {
-        "data": {
-            "id": "4",
-            "poemName": "Dearly Beloved",
-            "image": "http://localhost:8080/images/red-rose.jpg",
-            "likes": 14,
-            "email": "sobiahselvarajah@hotmail.co.uk",
-            "poet": "Sobiah",
-            "stanzas": 7
-        },        
-        "content": [
-            [
-                "Taking me by my delicate hands,",
-                "you pulled me up",
-                "promising that this is my last fall,",
-                "promising that you won't let go."
-            ],
-            [
-                "As my feet nestled into your footprints,",
-                "a wave of peace washed over me,",
-                "that the world wasn't as I thought,",
-                "that my turn of happiness has finally come."
-            ],
-            [
-                "As you spun and grabbed me,",
-                "I froze",
-                "lost within the ocean",
-                "of your soulful eyes,",
-                "slipping away slowly",
-                "into your world of fantasy."
-            ],
-            [
-                "As I lose grip on reality",
-                "you catch me softly,",
-                "sending quivers down my spine."
-            ],
-            [
-                "As your gaze intensifies,",
-                "I realise you're the missing piece",
-                "to the never-ending puzzle of my life."
-            ],
-            [
-                "Forget everything that's happened,",
-                "this single moment,",
-                "encapsulates a mysterious aura,",
-                "undefinable by any means."
-            ],
-            [
-                "No matter what",
-                "I would never let go,",
-                "believing that you'll forever hold my hand,",
-                "as I rest in the embers of your heart."
-            ]
-        ],
-        "comments": [
-            {
-                "name": "alice_writes",
-                "comment": "Beautifully written",
-                "id": "3pa7r0m2",
-                "timestamp": ""
-            }
-        ]
-    },
-    {
-        "data": {
-            "id": "5",
-            "poemName": "Take the Chance",
-            "image": "http://localhost:8080/images/seoul.jpg",
-            "likes": 21,
-            "email": "sobiahselvarajah@hotmail.co.uk",
-            "poet": "Sobiah",
-            "stanzas": 1
-        },        
-        "content": [
-            [
-                "When one door",
-                "closes",
-                "break down that",
-                "door,",
-                "don't wait",
-                "for another door",
-                "to open."
-            ]
-        ],
-        "comments": [
-            {
-                "name": "nooneherecallbacklater",
-                "comment": "🙌🏻🙌🏻",
-                "id": "8gm2m1f7",
-                "timestamp": ""
-            },
-            {
-                "name": "seeker_sr",
-                "comment": "Great talent and beautiful feed. 🔥 Keep creating more. All the best💕 More support and love to you. Stay amazing💕",
-                "id": "8la2mv1b7",
-                "timestamp": ""
-            },
-            {
-                "name": "inspired.motivations",
-                "comment": "#nevergiveup 💯🔥🔥🔥",
-                "id": "8qw2e1r7",
-                "timestamp": ""
-            }
-        ]
-    },
-    {
-        "data": {
-            "id": "6",
-            "poemName": "Precious Flower",
-            "image": "http://localhost:8080/images/cherry-blossom.jpg",
-            "likes": 23,
-            "email": "sobiahselvarajah@hotmail.co.uk",
-            "poet": "Sobiah",
-            "stanzas": 1
-        },        
-        "content": [
-            [
-                "Love is like a flower,",
-                "care for it carefully",
-                "and it will blossom",
-                "endlessly.",
-                "Of course Mother Nature",
-                "is always there,",
-                "to take these budding passions",
-                "through the seasons of life.",
-                "But from the moment you forget,",
-                "or choose to forget,",
-                "it will slowly begin to wither",
-                "and will never be the same.",
-                "Every flower is precious,",
-                "just remember to take care",
-                "of each and every one of them."
-            ]
-        ],
-        "comments": [
-            {
-                "name": "poet_by_night",
-                "comment": "Short, sweet and to the point ❤️",
-                "id": "4qw0e1r2",
-                "timestamp": ""
-            }
-        ]
-    },
-    {
-        "data": {
-            "id": "7",
-            "poemName": "Love Yourself",
-            "image": "http://localhost:8080/images/white-narcissus.jpg",
-            "likes": 22,
-            "email": "sobiahselvarajah@hotmail.co.uk",
-            "poet": "Sobiah",
-            "stanzas": 6
-        },        
-        "content": [
-            [
-                "In the search for a soulmate,",
-                "you may lose yourself",
-                "whilst creating an image of",
-                "perfection,",
-                "within the bubble of society."
-            ],
-            [
-                "Consumed by infatuations,",
-                "we fail to realise",
-                "the pure essence of soul,",
-                "that there's more to someone",
-                "than what meets the eye."
-            ],
-            [
-                "It's scary to let go of oneself",
-                "strip bare naked",
-                "in this stone-cold judging",
-                "world of ours,",
-                "every carefully concealed",
-                "secret,",
-                "revealed painstakingly in all",
-                "its glory,",
-                "shinning blindingly",
-                "in the limelight."
-            ],
-            [
-                "But it has to be done,",
-                "to unveil the delicate beauty",
-                "behind the featherlight strokes",
-                "of imperfections within ourselves,",
-                "every bloody scar...",
-                "every silent teardrop...",
-                "every torn-up memory that is buried",
-                "beneath an elaborate mask of idealism."
-            ],
-            [
-                "A true warrior",
-                "must learn to fight",
-                "their own battles,",
-                "unlocking the fears you possess,",
-                "that's the key to your happiness,",
-                "and the first step to the",
-                "subliminal world of romance."
-            ],
-            [
-                "Be brave.",
-                "Don't underestimate",
-                "how special you are,",
-                "because loving yourself for who you are",
-                "will open you up to the soulmate",
-                "who you've been searching for..."
-            ]
-        ],
-        "comments": [
-            {
-                "name": "aerimoir",
-                "comment": "I appreciate you for featuring my photo to your poet.💕💕",
-                "id": "8zx6a3b6",
-                "timestamp": ""
-            }
-        ]
-    },
-    {
-        "data": {
-            "id": "8",
-            "poemName": "Just do it",
-            "image": "http://localhost:8080/images/dogwood.jpg",
-            "likes": 25,
-            "email": "sobiahselvarajah@hotmail.co.uk",
-            "poet": "Sobiah",
-            "stanzas": 1
-        },        
-        "content": [
-            [
-                "Don't wait for New Year",
-                "new month",
-                "or a new day,",
-                "don't wait for tomorrow,",
-                "do it today."
-            ]
-        ],
-        "comments": [
-            {
-                "name": "poet_by_night",
-                "comment": "🙌 Agreed!",
-                "id": "4qv4l1a2",
-                "timestamp": ""
-            }
-        ]
-    },
-    {
-        "data": {
-            "id": "9",
-            "poemName": "Be you",
-            "image": "http://localhost:8080/images/sunset-people.jpg",
-            "likes": 26,
-            "email": "sobiahselvarajah@hotmail.co.uk",
-            "poet": "Sobiah",
-            "stanzas": 1
-        },        
-        "content": [
-            [
-                "Live as you are",
-                "For you are more",
-                "beautiful",
-                "Than those who",
-                "are blind",
-                "To inner beauty."
-            ]
-        ],
-        "comments": [
-            {
-                "name": "",
-                "comment": "",
-                "id": "",
-                "timestamp": ""
-            }
-        ]
-    },
-    {
-        "data": {
-            "id": "10",
-            "poemName": "Rainy Days",
-            "image": "http://localhost:8080/images/hardenbergia.jpg",
-            "likes": 28,
-            "email": "sobiahselvarajah@hotmail.co.uk",
-            "poet": "Sobiah",
-            "stanzas": 1
-        },        
-        "content": [
-            [
-                "Just take a deep breath,",
-                "close your eyes",
-                "and let the music take",
-                "over you...",
-                "hear the thrumming of the rain",
-                "against the windows",
-                "as the trees dance",
-                "to nature's lullaby of",
-                "the howling night winds outside.",
-                "Snuggled up",
-                "on a comfy couch,",
-                "all wrapped up warm",
-                "in a soft blanket,",
-                "holding a sweet mug of",
-                "hot chocolate,",
-                "dozens of",
-                "tiny soft marshmallows",
-                "gently bobbing on top...",
-                "the melody of the rain",
-                "falls faintly into my ears,",
-                "as I take a nice soothing sip",
-                "and settle into",
-                "my own wandering thoughts..."
-            ]
-        ],
-        "comments": [
-            {
-                "name": "",
-                "comment": "",
-                "id": "",
-                "timestamp": ""
-            }
-        ]
-    },
-    {
-        "data": {
-            "id": "11",
-            "poemName": "Hidden Pains",
-            "image": "http://localhost:8080/images/beautiful-winter.jpg",
-            "likes": 30,
-            "email": "sobiahselvarajah@hotmail.co.uk",
-            "poet": "Sobiah",
-            "stanzas": 1
-        },        
-        "content": [
-            [
-                "To those who",
-                "see me",
-                "with their eyes,",
-                "I may seem happy,",
-                "but sometimes",
-                "sadness cannot",
-                "be seen,",
-                "it can only be",
-                "understood",
-                "by those who",
-                "have truly felt",
-                "it."
-            ]
-        ],
-        "comments": [
-            {
-                "name": "",
-                "comment": "",
-                "id": "",
-                "timestamp": ""
-            }
-        ]
-    },
-    {
-        "data": {
-            "id": "12",
-            "poemName": "Always Remember",
-            "image": "http://localhost:8080/images/nectarine-blossoms.jpg",
-            "likes": 20,
-            "email": "sobiahselvarajah@hotmail.co.uk",
-            "poet": "Sobiah",
-            "stanzas": 4
-        },        
-        "content": [
-            [
-                "Respect",
-                "Trust",
-                "Love"
-            ],
-            [
-                "Respect the ones",
-                "you truly care for."
-            ],
-            [
-                "Trust that",
-                "they won't ever",
-                "intentionally hurt you."
-            ],
-            [
-                "Love them",
-                "for who they really are."
-            ]
-        ],
-        "comments": [
-            {
-                "name": "",
-                "comment": "",
-                "id": "",
-                "timestamp": ""
-            }
-        ]
-    }
-]
+        },
+        {
+            "id":"4","poemName":"Dearly Beloved","image":"http://localhost:8080/images/red-rose.jpg","likes":14,"email":"sobiahselvarajah@hotmail.co.uk","poet":"Sobiah","stanzas":7,"content":[["Taking me by my delicate hands,\nyou pulled me up\npromising that this is my last fall,\npromising that you won't let go.\n\nAs my feet nestled into your footprints,\na wave of peace washed over me,\nthat the world wasn't as I thought,\nthat my turn of happiness has finally come.\n\nAs you spun and grabbed me,\nI froze\nlost within the ocean\nof your soulful eyes,\nslipping away slowly\ninto your world of fantasy.\n\nAs I lose grip on reality\nyou catch me softly,\nsending quivers down my spine.\n\nAs your gaze intensifies,\nI realise you're the missing piece\nto the never-ending puzzle of my life.\n\nForget everything that's happened,\nthis single moment,\nencapsulates a mysterious aura,\nundefinable by any means.\n\nNo matter what\nI would never let go,\nbelieving that you'll forever hold my hand,\nas I rest in the embers of your heart."]],"comments":[{"name":"alice_writes","comment":"Beautifully written","id":"3pa7r0m2","timestamp":""}]},{"id":"5","poemName":"Take the Chance","image":"http://localhost:8080/images/seoul.jpg","likes":21,"email":"sobiahselvarajah@hotmail.co.uk","poet":"Sobiah","stanzas":1,"content":[["When one door","closes","break down that","door,","don't wait","for another door","to open."]],"comments":[{"name":"nooneherecallbacklater","comment":"🙌🏻🙌🏻","id":"8gm2m1f7","timestamp":""},{"name":"seeker_sr","comment":"Great talent and beautiful feed. 🔥 Keep creating more. All the best💕 More support and love to you. Stay amazing💕","id":"8la2mv1b7","timestamp":""},{"name":"inspired.motivations","comment":"#nevergiveup 💯🔥🔥🔥","id":"8qw2e1r7","timestamp":""}]},{"id":"6","poemName":"Precious Flower","image":"http://localhost:8080/images/cherry-blossom.jpg","likes":23,"email":"sobiahselvarajah@hotmail.co.uk","poet":"Sobiah","stanzas":1,"content":[["Love is like a flower,","care for it carefully","and it will blossom","endlessly.","Of course Mother Nature","is always there,","to take these budding passions","through the seasons of life.","But from the moment you forget,","or choose to forget,","it will slowly begin to wither","and will never be the same.","Every flower is precious,","just remember to take care","of each and every one of them."]],"comments":[{"name":"poet_by_night","comment":"Short, sweet and to the point ❤️","id":"4qw0e1r2","timestamp":""}]},{"id":"7","poemName":"Love Yourself","image":"http://localhost:8080/images/white-narcissus.jpg","likes":22,"email":"sobiahselvarajah@hotmail.co.uk","poet":"Sobiah","stanzas":6,"content":[["In the search for a soulmate,","you may lose yourself","whilst creating an image of","perfection,","within the bubble of society."],["Consumed by infatuations,","we fail to realise","the pure essence of soul,","that there's more to someone","than what meets the eye."],["It's scary to let go of oneself","strip bare naked","in this stone-cold judging","world of ours,","every carefully concealed","secret,","revealed painstakingly in all","its glory,","shinning blindingly","in the limelight."],["But it has to be done,","to unveil the delicate beauty","behind the featherlight strokes","of imperfections within ourselves,","every bloody scar...","every silent teardrop...","every torn-up memory that is buried","beneath an elaborate mask of idealism."],["A true warrior","must learn to fight","their own battles,","unlocking the fears you possess,","that's the key to your happiness,","and the first step to the","subliminal world of romance."],["Be brave.","Don't underestimate","how special you are,","because loving yourself for who you are","will open you up to the soulmate","who you've been searching for..."]],"comments":[{"name":"aerimoir","comment":"I appreciate you for featuring my photo to your poet.💕💕","id":"8zx6a3b6","timestamp":""}]},{"id":"8","poemName":"Just do it","image":"http://localhost:8080/images/dogwood.jpg","likes":25,"email":"sobiahselvarajah@hotmail.co.uk","poet":"Sobiah","stanzas":1,"content":[["Don't wait for New Year","new month","or a new day,","don't wait for tomorrow,","do it today."]],"comments":[{"name":"poet_by_night","comment":"🙌 Agreed!","id":"4qv4l1a2","timestamp":""}]},{"id":"9","poemName":"Be you","image":"http://localhost:8080/images/sunset-people.jpg","likes":26,"email":"sobiahselvarajah@hotmail.co.uk","poet":"Sobiah","stanzas":1,"content":[["Live as you are","For you are more","beautiful","Than those who","are blind","To inner beauty."]],"comments":[{"name":"","comment":"","id":"","timestamp":""}]},{"id":"10","poemName":"Rainy Days","image":"http://localhost:8080/images/hardenbergia.jpg","likes":28,"email":"sobiahselvarajah@hotmail.co.uk","poet":"Sobiah","stanzas":1,"content":[["Just take a deep breath,","close your eyes","and let the music take","over you...","hear the thrumming of the rain","against the windows","as the trees dance","to nature's lullaby of","the howling night winds outside.","Snuggled up","on a comfy couch,","all wrapped up warm","in a soft blanket,","holding a sweet mug of","hot chocolate,","dozens of","tiny soft marshmallows","gently bobbing on top...","the melody of the rain","falls faintly into my ears,","as I take a nice soothing sip","and settle into","my own wandering thoughts..."]],"comments":[{"name":"","comment":"","id":"","timestamp":""}]},{"id":"11","poemName":"Hidden Pains","image":"http://localhost:8080/images/beautiful-winter.jpg","likes":30,"email":"sobiahselvarajah@hotmail.co.uk","poet":"Sobiah","stanzas":1,"content":[["To those who","see me","with their eyes,","I may seem happy,","but sometimes","sadness cannot","be seen,","it can only be","understood","by those who","have truly felt","it."]],"comments":[{"name":"","comment":"","id":"","timestamp":""}]},{"id":"12","poemName":"Always Remember","image":"http://localhost:8080/images/nectarine-blossoms.jpg","likes":20,"email":"sobiahselvarajah@hotmail.co.uk","poet":"Sobiah","stanzas":4,"content":[["Respect","Trust","Love"],["Respect the ones","you truly care for."],["Trust that","they won't ever","intentionally hurt you."],["Love them","for who they really are."]],"comments":[{"name":"","comment":"","id":"","timestamp":""}]}]

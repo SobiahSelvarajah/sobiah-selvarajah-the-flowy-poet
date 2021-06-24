@@ -11,17 +11,18 @@ const WelcomePage = () => {
 
     return(
         <article className="welcomePage__container">
+            <div className="welcomePage__positioning">            
             <section className="welcomePage__container-top">
                 <ImportLogo /> 
             </section>
+                <section className="welcomePage__container-middle">
+                    <IntroImage />
+                </section>
+            </div>                
+                <section className="welcomePage__container-bottom">
+                    <ImportIntroPoem />
+                </section>
 
-            <section className="welcomePage__container-middle">
-                 <IntroImage />
-            </section>
-            
-            <section className="welcomePage__container-bottom">
-                <ImportIntroPoem />
-            </section>
 
         </article>
 

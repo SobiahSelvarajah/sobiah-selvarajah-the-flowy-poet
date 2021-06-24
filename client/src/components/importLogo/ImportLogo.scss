@@ -6,5 +6,8 @@
 
 .importLogo {
     width: 90vw;
+    @include tablet {
+        width: 30vw;
+    }
 
 }

@@ -5,6 +5,7 @@ import { uuid } from 'uuidv4';
 import './DiscoverPoetry.scss';
 import PoemCard from '../../components/poemCard/PoemCard';
 import PoemFormHeader from '../../components/poemFormSection/PoemFormHeader';
+import axios from 'axios';
 
 
 const POEM_API_URL = process.env.REACT_APP_API_URL;
@@ -53,6 +54,7 @@ const DiscoverPoetry = () => {
     }
 
     const handleAddOrEdit = () => {
+        console.log("hi there");
         if (isEdit) {
             const newPoem = {
                 poemName,
@@ -83,14 +85,56 @@ const DiscoverPoetry = () => {
         );
     };
 
-    //axios request to post poem
+
+
+    
+
+    // axios request to post poem
     // const handleAddPoem = (e) => {
     //     e.preventDefault();
-    //     setPoemsList
+    //     const postPoem = {
+    //         poet, 
+    //         poemName,
+    //         content
+    //     };
+
+    //     axios
+    //         .post(`${POEM_API_URL}/poems`, postPoem)
+    //         .then(res => {
+    //             console.log(res)
+    //         })
     // }
 
-    const addPoem =(newPoem) => {
-        setPoemsList([newPoem, ...poemsList]);
+    // function addPost(url) {
+    //     const [poet, setPoet] = useState('');
+    //     const [poemName, setPoemName] = useState('');
+    //     const [content, setContent] = useState('');
+    
+    //     function onPostPoem (e) {
+    //         e.preventDefault();
+    //         const postPoem = {
+    //             poet,
+    //             poemName,
+    //             content
+    //         };
+    //         axios
+    //             .post(
+    //                 url, postPoem
+    //             )
+    //             .then((res) => {
+    //                 console.log(res);
+    //             })
+    //     }
+    // }
+
+    const addPoem = (newPoem) => {
+
+        axios
+            .post(`${POEM_API_URL}/poems`, newPoem)
+            .then(res => {
+                setPoemsList([newPoem, ...poemsList]);
+            })
+        return newPoem
     };
     
 

@@ -6,4 +6,7 @@
 
 .introImage {
     width: 100vw;
+    @include tablet {
+        width: 70vw;
+    }
 }

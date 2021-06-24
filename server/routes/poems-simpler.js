@@ -22,12 +22,13 @@ router.get('/', (_req, res) => {
 
     const poemsFiltered = poemsData.map(poem => {
 
+
         return { 
-            id: poem.data.id,
-            poemName: poem.data.poemName,
-            image: poem.data.image,
-            poet: poem.data.poet,
-            likes: poem.data.likes,
+            id: poem.id,
+            poemName: poem.poemName,
+            image: poem.image,
+            poet: poem.poet,
+            likes: poem.likes,
             content: poem.content
         }
     })

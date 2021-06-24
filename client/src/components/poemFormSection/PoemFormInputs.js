@@ -12,12 +12,14 @@ const PoemFormInputs = ({
     content,
     setContent,
     clearInput,
-    hamdleAddOrEdit
+    handleAddOrEdit
 }) => {
     const buttonContent = isEdit ? 'Change' : 'Add';
+    console.log(handleAddOrEdit);
 
     return (
-        <div className="poemFormInputs__container">
+        <section className="poemFormInputs__container">
+            
             <div className="poemFormInputs__subcontainer">
                 <label 
                     htmlFor="poet"
@@ -69,7 +71,7 @@ const PoemFormInputs = ({
             <div className="poemFormInputs__buttons">
                 <button 
                     className="poemFormInputs__button"
-                    onClick={hamdleAddOrEdit}
+                    onClick={handleAddOrEdit}
                 >
                     {buttonContent}
                 </button>
@@ -80,7 +82,8 @@ const PoemFormInputs = ({
                     Clear
                 </button>
             </div>
-        </div>
+        </section>
+
     )
 }
 
