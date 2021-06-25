@@ -4,6 +4,7 @@ import { Container } from '@material-ui/core';
 import DictionaryHeader from '../../components/dictionaryHeader/DictionaryHeader';
 import './DictionaryPage.scss';
 import DictionaryQuote from '../../components/dictionaryQuote/DictionaryQuote';
+import DictionaryDefinitions from '../../components/dictionaryDefinitions/DictionaryDefinitions';
 
 const DictionaryPage = () => {
 
@@ -14,7 +15,7 @@ const DictionaryPage = () => {
     const dictionaryAPI = async () => {
         try {
             const data = await axios.get(
-                "https://api.dictionaryapi.dev/api/v2/entries/en/poet"
+                `https://api.dictionaryapi.dev/api/v2/entries/${languageList}/${word}`
             );
 
             // console.log(data);
@@ -24,12 +25,11 @@ const DictionaryPage = () => {
         } 
     };
 
-    console.log(meanings);
 
     useEffect(() => {
         dictionaryAPI();
         
-    }, [])
+    }, [word, languageList])
 
 
     return (
@@ -38,7 +38,19 @@ const DictionaryPage = () => {
                 maxWidth="md"
                 className="dictionaryPage__container">
                     <DictionaryQuote />
-                    <DictionaryHeader />
+                    <DictionaryHeader 
+                        languageList={languageList}
+                        setLanguageList={setLanguageList}
+                        word={word}
+                        setWord={setWord}
+                    />
+                    {meanings && (
+                        <DictionaryDefinitions 
+                            word={word}
+                            meanings={meanings}
+                            languageList={languageList}
+                        />
+                    )}
             </Container>    
         </section>
     )

@@ -1,0 +1,18 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.dictionaryDefinitions {
+
+    &__container {
+        display: flex;
+        flex-direction: column;        
+    }
+
+    &__title {
+        font-size: $h3_text_size_m;
+        line-height: $h3_line_height_m;
+    }
+
+}
