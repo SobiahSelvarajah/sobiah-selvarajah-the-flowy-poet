@@ -2,3 +2,28 @@
 @use '../../partials/colors' as *;
 @use '../../partials/textstyles' as *;
 @use '../../partials/typeface' as *;
+
+
+.dictionaryPage {
+    
+    &__section {
+        padding-top: 120px;
+        height: 100vh;
+        background-color: $white;        
+    }
+
+    &__container {
+        color: $dark_blue;
+        font-size: $h1_text_size_m;
+        line-height: $h1_line_height_m;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    &__quote {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+}
