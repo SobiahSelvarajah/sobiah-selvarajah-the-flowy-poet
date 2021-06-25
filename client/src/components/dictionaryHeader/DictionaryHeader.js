@@ -12,7 +12,7 @@ const DictionaryHeader = () => {
             <div className="dictionaryHeader__inputs">
                 <TextField id="standard-basic" label="Standard" />
                 <TextField 
-                    id="standard-select-country"
+                    id="standard-select-language"
                     select
                     label="Select"
                     helperText="Please select your language"
