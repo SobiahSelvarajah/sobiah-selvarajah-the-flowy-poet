@@ -3,11 +3,13 @@ import axios from 'axios';
 import { Container } from '@material-ui/core';
 import DictionaryHeader from '../../components/dictionaryHeader/DictionaryHeader';
 import './DictionaryPage.scss';
+import DictionaryQuote from '../../components/dictionaryQuote/DictionaryQuote';
 
 const DictionaryPage = () => {
 
     const [word, setWord] = useState("");
     const [meanings, setMeanings] = useState([]);
+    const [languageList, setLanguageList] = useState("en");
 
     const dictionaryAPI = async () => {
         try {
@@ -35,16 +37,9 @@ const DictionaryPage = () => {
             <Container 
                 maxWidth="md"
                 className="dictionaryPage__container">
+                    <DictionaryQuote />
                     <DictionaryHeader />
-            </Container>
-            <div className="dictionaryPage__quote">
-                <p className="dictionaryPage__quote-text">
-                    "Impossible is a word to be found only in the dictionary of fools."
-                    <br/>
-                    -Napoleon Bonaparte
-                </p>
-            </div>
-            
+            </Container>    
         </section>
     )
 }

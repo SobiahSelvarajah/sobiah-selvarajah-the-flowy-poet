@@ -1,0 +1,16 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.dictionaryQuote {
+    
+    &__text {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        font-family: 'Montserrat Light Italic';
+        font-size: $h3_text_size_m;
+        line-height: $h3_line_height_m;
+    }
+}
