@@ -9,7 +9,8 @@
     &__section {
         padding: 120px 0px;
         height: 100vh;
-        background-color: $white;        
+        background-color: $white;   
+    
     }
 
     &__container {
@@ -25,5 +26,9 @@
         display: flex;
         justify-content: center;
         padding: 20px;
+    }
+
+    &__definitions-container {
+        padding-bottom: 40px;
     }
 }

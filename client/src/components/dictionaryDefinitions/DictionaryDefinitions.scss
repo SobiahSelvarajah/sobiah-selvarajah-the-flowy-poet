@@ -12,11 +12,11 @@
         height: 55vh;  
         border: 0.5px $light_grey solid;
         box-shadow: 
-            5px 10px 20px 1px 
-            rgba(0, 0, 0, 0.5)
-            ;        
+            12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+            -8px -8px 12px 0 rgba(255, 255, 255, 0.3);        
         border-radius: 4%;;
-        padding: 20px;
+        padding: 40px;
+        
  
     }
 
@@ -25,10 +25,18 @@
         line-height: $h3_line_height_m;
     }
 
+    &__fullMeanings-container {
+        padding-bottom: 30px;
+    }
+
     &__fullMeanings {
         display: flex;
         flex-direction: column;
-        padding: 10px;
+        padding: 50px;
+        border-radius: 66px;
+        background: #ffffff;
+        box-shadow: inset 17px 17px 34px #c7c7c7,
+                    inset -17px -17px 34px #ffffff;
 
     }
 

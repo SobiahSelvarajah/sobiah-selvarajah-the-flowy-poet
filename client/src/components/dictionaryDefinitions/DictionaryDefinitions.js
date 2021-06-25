@@ -16,17 +16,19 @@ const DictionaryDefinitions = (
             (meanings.map((eachMeaning) => (
                 eachMeaning.meanings.map((eachDefined) => (
                     eachDefined.definitions.map((definedWord) => (
-                        <div className="dictionaryDefinitions__fullMeanings">
-                            <p className="dictionaryDefinitions__bold">{definedWord.definition}</p>
-                            <hr />
-                            {definedWord.example && (
-                                <span className="dictionaryDefinitions__example-container">
-                                    <p className="dictionaryDefinitions__bold">
-                                        Example: 
-                                    </p>
-                                    <p className="dictionaryDefinitions__examples">{definedWord.example}</p>
-                                </span>
-                            )}
+                        <div className="dictionaryDefinitions__fullMeanings-container">
+                            <div className="dictionaryDefinitions__fullMeanings">
+                                <p className="dictionaryDefinitions__bold">{definedWord.definition}</p>
+                                <hr />
+                                {definedWord.example && (
+                                    <span className="dictionaryDefinitions__example-container">
+                                        <p className="dictionaryDefinitions__bold">
+                                            Example: 
+                                        </p>
+                                        <p className="dictionaryDefinitions__examples">{definedWord.example}</p>
+                                    </span>
+                                )}
+                            </div>
                         </div>
                     ))
                 ))

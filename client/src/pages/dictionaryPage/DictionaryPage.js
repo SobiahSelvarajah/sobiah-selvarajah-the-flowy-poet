@@ -45,11 +45,13 @@ const DictionaryPage = () => {
                         setWord={setWord}
                     />
                     {meanings && (
-                        <DictionaryDefinitions 
-                            word={word}
-                            meanings={meanings}
-                            languageList={languageList}
-                        />
+                        <div className="dictionaryPage__definitions-container">
+                            <DictionaryDefinitions 
+                                word={word}
+                                meanings={meanings}
+                                languageList={languageList}
+                            />
+                        </div>
                     )}
             </Container>    
         </section>
