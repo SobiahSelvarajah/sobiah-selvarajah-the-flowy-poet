@@ -7,12 +7,38 @@
 
     &__container {
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;  
+        overflow-y: scroll;
+        height: 55vh;  
+        border: 0.5px $light_grey solid;
+        box-shadow: 
+            5px 10px 20px 1px 
+            rgba(0, 0, 0, 0.5)
+            ;        
+        border-radius: 4%;;
+        padding: 20px;
+ 
     }
 
     &__title {
         font-size: $h3_text_size_m;
         line-height: $h3_line_height_m;
     }
+
+    &__fullMeanings {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+    }
+
+    &__bold {
+        font-family: 'Montserrat Semi Bold';
+    }
+
+    &__examples {
+        font-family: 'Montserrat Light Italic';
+    }
+
 
 }
