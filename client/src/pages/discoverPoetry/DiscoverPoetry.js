@@ -54,7 +54,6 @@ const DiscoverPoetry = () => {
     }
 
     const handleAddOrEdit = () => {
-        console.log("hi there");
         if (isEdit) {
             const newPoem = {
                 poemName,
@@ -77,58 +76,22 @@ const DiscoverPoetry = () => {
     
 
 
-    const editCurrentPoem = (newPoem) => {
-        setPoemsList(
-            poemsList.map((poem) => 
-            poem.id === currentPoem.id ? newPoem : poem
-            )
-        );
+    const editCurrentPoem = (editedPoem) => {
+        axios
+            .put(`${POEM_API_URL}/poems`)
+            .then(res => {
+                setPoemsList(
+                    poemsList.map((poem) => 
+                    poem.id === currentPoem.id ? editedPoem : poem
+                    )
+                );                
+            })
+        return editedPoem
     };
 
 
 
-    
-
-    // axios request to post poem
-    // const handleAddPoem = (e) => {
-    //     e.preventDefault();
-    //     const postPoem = {
-    //         poet, 
-    //         poemName,
-    //         content
-    //     };
-
-    //     axios
-    //         .post(`${POEM_API_URL}/poems`, postPoem)
-    //         .then(res => {
-    //             console.log(res)
-    //         })
-    // }
-
-    // function addPost(url) {
-    //     const [poet, setPoet] = useState('');
-    //     const [poemName, setPoemName] = useState('');
-    //     const [content, setContent] = useState('');
-    
-    //     function onPostPoem (e) {
-    //         e.preventDefault();
-    //         const postPoem = {
-    //             poet,
-    //             poemName,
-    //             content
-    //         };
-    //         axios
-    //             .post(
-    //                 url, postPoem
-    //             )
-    //             .then((res) => {
-    //                 console.log(res);
-    //             })
-    //     }
-    // }
-
-    const addPoem = (newPoem) => {
-
+    const addPoem = (newPoem) => { 
         axios
             .post(`${POEM_API_URL}/poems`, newPoem)
             .then(res => {

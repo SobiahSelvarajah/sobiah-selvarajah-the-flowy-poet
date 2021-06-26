@@ -25,7 +25,9 @@ const NavBar = () => {
         <Nav>
             <img 
                 className="logo" 
-                src={blackLogo}>
+                src={blackLogo}
+                alt="monochrome logo"
+            >
             </img>
             <Burger />
         </Nav>
