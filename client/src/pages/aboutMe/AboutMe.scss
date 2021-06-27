@@ -3,3 +3,14 @@
 @use '../../partials/textstyles' as *;
 @use '../../partials/typeface' as *;
 
+.aboutMe {
+    &__container {
+        padding: 120px 60px 60px 30px;
+    }
+
+    &__video {
+        width: 80vw;
+        height: 40vh
+
+    }
+}

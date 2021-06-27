@@ -1,0 +1,36 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.aboutMeHeader {
+
+    &__heading {
+        font-family: 'Montserrat Medium';
+        font-size: $h1_text_size_m;
+        line-height: $h1_line_height_m;
+        @include tablet {
+            font-size: $h1_text_size_dt;
+            line-height: $h1_line_height_dt;
+        }
+    }
+
+    &__subheading-container {
+        @include tablet {
+        display: flex;
+        justify-content: center;           
+        }
+    }
+
+    &__subheading {
+        font-family: 'Montserrat Light';
+        font-size: $h2_text_size_m;
+        line-height: $h2_line_height_m;
+        padding: 20px;
+        @include tablet {
+            font-size: $h2_text_size_dt;
+            line-height: $h2_line_height_dt;
+        }
+   
+    }
+}
