@@ -1,6 +1,8 @@
 import React from 'react';
 import VideoPlayer from 'react-video-js-player';
 import AboutMeHeader from '../../components/aboutMeHeader/AboutMeHeader';
+import AboutMeBio from '../../components/aboutMeBio/AboutMeBio';
+
 import dance from '../../data/dance.MOV';
 
 import './AboutMe.scss'
@@ -11,6 +13,7 @@ const AboutMe = () => {
     return (
         <section className="aboutMe__container">
             <AboutMeHeader />
+            <AboutMeBio />
             <div className="aboutMe__video-container">
                 <VideoPlayer 
                     className="aboutMe__video"

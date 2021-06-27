@@ -1,0 +1,35 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.aboutMeBio {
+
+    &__section {
+
+        @include tablet {
+            padding: 20px;
+        }
+        
+        
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;  
+        align-items: center;      
+
+    }
+
+    &__text {
+        margin: 10px;
+        font-size: $h4_text_size_m;
+        line-height: $h3_line_height_m;
+    }
+
+    &__image {
+        width: 40%;
+        height: 40%;
+        
+    }
+}
