@@ -10,13 +10,21 @@ const AboutMeBio = () => {
                 <p className="aboutMeBio__text">
                     My name is Sobiah.
                     <br />
-                    Gradua
+                    <br />
+                    Graduated with a Maths degree 
+                    and then decided to delve into the tech industry, 
+                    mainly because of my interest in coding and algorithms.
+                    <br />
                     <br />
                     As much as I love to code, 
                     there are times when you need to step back and breathe.
                     Poetry lets me destress emotionally,
                     while dancing allows me to step away from reality 
                     and disappear into a world of my own.
+                    <br />
+                    <br />
+                    This poetry webpage is to build a community of aspiring poets, 
+                    like a cozy poet's corner.
                     
                 </p>
                 <img className="aboutMeBio__image" src={me} alt="me"></img>
