@@ -18,7 +18,6 @@ const DictionaryPage = () => {
                 `https://api.dictionaryapi.dev/api/v2/entries/${languageList}/${word}`
             );
 
-            // console.log(data);
             setMeanings(data.data)
         } catch(error) {
             console.log(error);
