@@ -4,13 +4,14 @@
 @use '../../partials/typeface' as *;
 
 .poemFormHeader {
-    
-    // &__container {
-    //     background-color: $light_mint;
-    // }
 
     &__heading {
         font-family: 'Montserrat Medium Italic';
         font-size: $h1_text_size_m;
+        line-height: $h1_line_height_m;
+        @include tablet {
+            font-size: $h1_text_size_dt;
+            line-height: $h1_line_height_dt;
+        }
     }
 }

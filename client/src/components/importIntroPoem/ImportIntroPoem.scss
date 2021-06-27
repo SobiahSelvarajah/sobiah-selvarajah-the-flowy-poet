@@ -8,6 +8,10 @@
     &__text {
         font-size: $h2_text_size_m;
         line-height: $h2_line_height_m;  
+        @include tablet {
+            font-size: $h2_text_size_dt;
+            line-height: $h2_line_height_dt;  
+        }
     }
 
 

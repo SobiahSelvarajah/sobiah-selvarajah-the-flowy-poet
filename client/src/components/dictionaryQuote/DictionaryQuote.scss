@@ -12,5 +12,9 @@
         font-family: 'Montserrat Light Italic';
         font-size: $h3_text_size_m;
         line-height: $h3_line_height_m;
+        @include tablet {
+            font-size: $h3_text_size_dt;
+            line-height: $h3_line_height_dt;
+        }
     }
 }

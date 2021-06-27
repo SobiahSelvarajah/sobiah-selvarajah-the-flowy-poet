@@ -16,7 +16,12 @@
     &__poems {
         font-family: 'Montserrat Medium';
         font-size: $h3_text_size_m;
+        line-height: $h3_line_height_m;
         padding-top: 60px;
+        @include tablet {
+            font-size: $h3_text_size_dt;
+            line-height: $h3_line_height_dt;
+        }
 
     }
     &__heading {
@@ -26,6 +31,7 @@
         padding-left: 40px;
         @include tablet {
             font-size: $h1_text_size_dt;
+            line-height: $h1_line_height_dt;
         }
     }
 

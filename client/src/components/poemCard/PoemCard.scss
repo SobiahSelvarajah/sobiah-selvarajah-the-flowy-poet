@@ -48,11 +48,6 @@
         justify-content: space-between;
     }
 
-    &__likes-container {
-        display: flex;
-        flex-direction: row;
-    }
-
     &__poem-collapsible {
         padding-bottom: 10px;
     }
@@ -91,10 +86,16 @@
         border-radius: 10px;
         padding: 15px 20px;
         font-size: $h4_text_size_m;
+        line-height: $h4_line_height_m;
         text-transform: uppercase;
         cursor: pointer;
         background-color: $dark_blue;
         box-shadow: 0 0 4px #999;
         outline: none;
         color: $white;
+        @include tablet {
+            padding: 20px 25px;
+            font-size: $h4_text_size_dt;
+            line-height: $h4_line_height_dt;
+        }
     }

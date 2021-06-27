@@ -1,12 +1,13 @@
 
-import {useState, useEffect} from 'react'
+import {useState, useEffect} from 'react';
+import axios from 'axios';
 import { useFetch, usePut} from '../../hooks/index';
 import { uuid } from 'uuidv4';
-import './DiscoverPoetry.scss';
-import PoemCard from '../../components/poemCard/PoemCard';
-import PoemFormHeader from '../../components/poemFormSection/PoemFormHeader';
-import axios from 'axios';
 
+import PoemFormHeader from '../../components/poemFormSection/PoemFormHeader';
+import PoemCard from '../../components/poemCard/PoemCard';
+
+import './DiscoverPoetry.scss';
 
 const POEM_API_URL = process.env.REACT_APP_API_URL;
 

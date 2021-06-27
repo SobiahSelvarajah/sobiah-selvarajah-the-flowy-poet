@@ -6,7 +6,6 @@
 .aboutMeBio {
 
     &__section {
-
         @include tablet {
             padding: 20px;
         }
@@ -25,12 +24,12 @@
 
     &__text {
         margin: 10px;
-        font-size: $h4_text_size_m;
+        font-size: $h3_text_size_m;
         line-height: $h3_line_height_m;
         @include tablet {
             margin: 50px;
-            font-size: $h4_text_size_dt;
-            line-height: $h3_line_height_dt;
+            font-size: $h3_text_size_dt;
+            line-height: $h2_line_height_dt;
         }
     }
 
