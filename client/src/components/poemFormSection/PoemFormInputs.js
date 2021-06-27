@@ -15,7 +15,6 @@ const PoemFormInputs = ({
     handleAddOrEdit
 }) => {
     const buttonContent = isEdit ? 'Change' : 'Add';
-    console.log(handleAddOrEdit);
 
     return (
         <section className="poemFormInputs__container">

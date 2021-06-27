@@ -53,6 +53,11 @@ const RightNav = ({ open }) => {
             >
                 Dictionary
             </a>
+            <a
+                href='/aboutMe'
+            >
+                About Me
+            </a>
         </Ul>
     )
 }

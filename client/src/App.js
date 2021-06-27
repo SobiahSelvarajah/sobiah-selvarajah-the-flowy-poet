@@ -7,6 +7,7 @@ import DictionaryPage from './pages/dictionaryPage/DictionaryPage';
 // import PoemForm from './pages/poemForm/PoemForm';
 
 import './App.scss';
+import AboutMe from './pages/aboutMe/AboutMe';
 
 
 
@@ -21,6 +22,7 @@ const App = () => {
         <Route exact path='/' component={WelcomePage} />
         <Route path='/discoverPoetry' component={DiscoverPoetry} />
         <Route path='/dictionary' component={DictionaryPage} />
+        <Route path='/aboutMe' component={AboutMe} />
         {/* <Route path='/poemForm' component={PoemForm} /> */}
         </Switch>
       </Router>
