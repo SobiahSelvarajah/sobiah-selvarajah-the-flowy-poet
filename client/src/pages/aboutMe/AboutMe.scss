@@ -8,9 +8,35 @@
         padding: 120px 60px 60px 30px;
     }
 
+    &__subheading-hobbies {
+        font-size: $h2_text_size_m;
+        line-height: $h2_line_height_m;
+        padding: 20px 0;
+        @include tablet {
+            font-size: $h2_text_size_dt;
+            line-height: $h2_line_height_dt;
+        }
+    }
+    &__video-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
     &__video {
         width: 80vw;
         height: 40vh
 
+    }
+
+    &__video-caption {
+        font-family: 'Montserrat Light Italic';
+        font-size: $h4_text_size_m;
+        line-height: $h4_line_height_m;
+        padding-left: 20px;
+        @include tablet {
+            font-size: $h4_text_size_dt;
+            line-height: $h4_line_height_dt;
+        }
     }
 }
