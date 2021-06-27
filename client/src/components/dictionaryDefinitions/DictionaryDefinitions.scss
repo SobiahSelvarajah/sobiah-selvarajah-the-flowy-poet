@@ -18,6 +18,16 @@
         padding: 40px;
     }
 
+    &__audio-container {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    &__audio {
+        border-radius: 10px;
+    }
+
     &__title {
         font-size: $h4_text_size_m;
         line-height: $h4_line_height_m;

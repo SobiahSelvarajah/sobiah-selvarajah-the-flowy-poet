@@ -11,6 +11,17 @@ const DictionaryDefinitions = (
 
     return (
         <section className="dictionaryDefinitions__container">
+            <div className="dictionaryDefinitions__audio-container">
+                {word && meanings[0] && languageList === "en" && (
+                    <audio
+                        className="dictionaryDefinitions__audio"
+                        src={meanings[0].phonetics[0] && meanings[0].phonetics[0].audio}
+                        controls
+                    >
+                        Sorry, audio not supported by browser
+                    </audio>
+                )}
+            </div>
             {word === "" ? 
             (<span className="dictionaryDefinitions__title">Don't know the meaning? Type it in the searchbar!</span>) : 
             (meanings.map((eachMeaning) => (
