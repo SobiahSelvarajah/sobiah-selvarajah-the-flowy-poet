@@ -22,8 +22,6 @@
         }
     }
 
-
-
     &__container-bottom {
         padding: 100px 20px;
         @include tablet {
@@ -31,7 +29,6 @@
             width: -webkit-fill-available;
         }
     }
-
 
     &__container-bottom {
         display: flex;
@@ -45,6 +42,5 @@
             display: flex;
             flex-direction: column;
         }
-        
     }
 }

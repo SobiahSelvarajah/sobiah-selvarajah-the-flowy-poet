@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-
 const Ul = styled.ul`
     display: flex;
     flex-flow: column nowrap;
@@ -16,7 +15,6 @@ const Ul = styled.ul`
     width: 200px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
-
 
 
     a {

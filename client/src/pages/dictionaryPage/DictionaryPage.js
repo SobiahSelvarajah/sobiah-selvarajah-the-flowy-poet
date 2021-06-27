@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Container } from '@material-ui/core';
-import DictionaryHeader from '../../components/dictionaryHeader/DictionaryHeader';
-import './DictionaryPage.scss';
+
 import DictionaryQuote from '../../components/dictionaryQuote/DictionaryQuote';
+import DictionaryHeader from '../../components/dictionaryHeader/DictionaryHeader';
 import DictionaryDefinitions from '../../components/dictionaryDefinitions/DictionaryDefinitions';
+
+import './DictionaryPage.scss';
 
 const DictionaryPage = () => {
 

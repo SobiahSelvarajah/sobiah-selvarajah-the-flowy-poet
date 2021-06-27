@@ -28,7 +28,6 @@
         }    
     }
 
-
     &__body {
         padding-bottom: 80px;
         @include tablet {
@@ -40,7 +39,6 @@
         width: 100%;
         border-radius: 10px;
     }
-
 
     &__subheadings {
         display: flex;
@@ -59,9 +57,9 @@
 
     &__poem-button {
         background-position: center;
-        transition: background 0.8s;
-        
+        transition: background 0.8s;  
     }
+
     &__poem-button:hover {
         background-color: $light_blue;
         background-image: 
@@ -72,7 +70,6 @@
         background-position: center;
         background-size: 150000%;
     }
-
 
     &__poem-button:active {
         transition: background 0.3s;

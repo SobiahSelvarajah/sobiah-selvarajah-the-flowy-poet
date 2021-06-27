@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 import styled from 'styled-components';
-import RightNav from '../rightNav/RightNav';
 
+import RightNav from '../rightNav/RightNav';
 
 
 const StyledBurger = styled.div`
@@ -38,7 +38,6 @@ const StyledBurger = styled.div`
         }
     }
 `;
-
 
 
 const Burger = () => {

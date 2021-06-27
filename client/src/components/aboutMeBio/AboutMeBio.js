@@ -1,9 +1,11 @@
 import React from 'react';
+
 import './AboutMeBio.scss';
 
 import me from '../../data/me.jpg';
 
 const AboutMeBio = () => {
+
     return (
         <section className="aboutMeBio__section">
             <div className="aboutMeBio__container">

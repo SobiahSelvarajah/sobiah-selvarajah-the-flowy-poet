@@ -1,6 +1,7 @@
+import React from 'react';
 
 import './PoemCard.scss'
-// funtionality to like and edit poem
+
 
 const PoemCard = ({poems, handleClick, handleEditClick}) => {
 

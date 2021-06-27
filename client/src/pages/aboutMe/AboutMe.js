@@ -1,5 +1,6 @@
 import React from 'react';
 import VideoPlayer from 'react-video-js-player';
+
 import AboutMeHeader from '../../components/aboutMeHeader/AboutMeHeader';
 import AboutMeBio from '../../components/aboutMeBio/AboutMeBio';
 

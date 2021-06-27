@@ -1,11 +1,8 @@
-
 import styled from 'styled-components';
 
 import Burger from '../burger/Burger';
 
 import blackLogo from '../../assets/images/logo-files/resizable_vector_files/Black.svg'
-
-
 
 
 const Nav = styled.nav`

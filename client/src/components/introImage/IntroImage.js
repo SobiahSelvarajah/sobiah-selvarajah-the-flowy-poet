@@ -1,5 +1,7 @@
 import React from 'react';
+
 import stones from '../../assets/images/introImage.jpg';
+
 import './IntroImage.scss';
 
 
@@ -12,7 +14,6 @@ const IntroImage = () => {
             alt="stones"
         />
     )
-
 }
 
 export default IntroImage;

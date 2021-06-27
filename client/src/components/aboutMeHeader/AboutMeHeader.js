@@ -3,6 +3,7 @@ import React from 'react';
 import './AboutMeHeader.scss';
 
 const AboutMeHeader = () => {
+    
     return (
         <section className="aboutMeHeader__container">
             <span className="aboutMeHeader__heading">
