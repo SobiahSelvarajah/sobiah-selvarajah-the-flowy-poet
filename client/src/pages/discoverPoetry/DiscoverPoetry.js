@@ -62,7 +62,7 @@ const DiscoverPoetry = () => {
                 content,
                 id: currentPoem.id
             };
-            editCurrentPoem(newPoem);
+            editCurrentPoem(currentPoem.id);
         } else {
             const newPoem = {
                 poemName,
@@ -75,19 +75,19 @@ const DiscoverPoetry = () => {
         clearInput();
     };
     
+console.log(currentPoem)
 
-
-    const editCurrentPoem = (editedPoem) => {
+    const editCurrentPoem = (poemId) => {
         axios
-            .put(`${POEM_API_URL}/poems`)
+            .put(`${POEM_API_URL}/poems/${poemId}`)
             .then(res => {
+                console.log(res)
                 setPoemsList(
                     poemsList.map((poem) => 
-                    poem.id === currentPoem.id ? editedPoem : poem
+                    poem.id === currentPoem.id ? poemId : poem
                     )
                 );                
             })
-        return editedPoem
     };
 
 

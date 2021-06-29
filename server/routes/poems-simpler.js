@@ -88,7 +88,7 @@ router.put('/:poemId', (req, res) => {
     const updatedPoem = req.body;
 
     const indexOfPoem = poemsData.findIndex(
-        poem => poem.data.id === singlePoemId
+        poem => poem.id === singlePoemId
     );
 
     if (indexOfPoem === -1){
