@@ -45,6 +45,7 @@ const DiscoverPoetry = () => {
         setPoet(chosenPoem[0].poet);
         setContent(chosenPoem[0].content);
     };
+    
 
     const clearInput = () => {
         setIsEdit(false);
@@ -54,7 +55,11 @@ const DiscoverPoetry = () => {
         setContent('')
     }
 
-    const handleAddOrEdit = () => {
+    const editPoem = (id, formData) => {
+      return axios.put(`${POEM_API_URL}/poems/${id}`, formData)
+    }
+
+    const handleAddOrEdit = async () => {
         if (isEdit) {
             const newPoem = {
                 poemName,
@@ -62,7 +67,9 @@ const DiscoverPoetry = () => {
                 content,
                 id: currentPoem.id
             };
-            editCurrentPoem(currentPoem.id);
+            // editCurrentPoem(currentPoem.id);
+            const res = await editPoem(currentPoem.id, newPoem)
+            console.log('Edit response: ', res)
         } else {
             const newPoem = {
                 poemName,
@@ -73,21 +80,6 @@ const DiscoverPoetry = () => {
             addPoem(newPoem);
         }
         clearInput();
-    };
-    
-console.log(currentPoem)
-
-    const editCurrentPoem = (poemId) => {
-        axios
-            .put(`${POEM_API_URL}/poems/${poemId}`)
-            .then(res => {
-                console.log(res)
-                setPoemsList(
-                    poemsList.map((poem) => 
-                    poem.id === currentPoem.id ? poemId : poem
-                    )
-                );                
-            })
     };
 
 
