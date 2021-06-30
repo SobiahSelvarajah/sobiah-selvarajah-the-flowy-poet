@@ -17,14 +17,14 @@
 
 Users can:
 
--> Read poems
--> Post poems
--> Edit poems
--> Find definitions in multiple languages
+- Read poems
+- Post poems
+- Edit poems
+- Find definitions in multiple languages
 
 
 ## To start the app
 
-:/ Run npm install
-:/ Run npm start on both server and client
+- Run npm install
+- Run npm start on both server and client
 
