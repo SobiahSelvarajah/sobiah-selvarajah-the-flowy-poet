@@ -87,21 +87,25 @@ router.put('/:poemId', (req, res) => {
     const singlePoemId = req.params.poemId;
     const updatedPoem = req.body;
 
-    const indexOfPoem = poemsData.findIndex(
-        poem => poem.id === singlePoemId
+    let indexOfPoem
+    const myPoem = poemsData.find(
+        (poem, i) => {if (poem.id === singlePoemId){
+            indexOfPoem = i;
+            return poem
+        }}
     );
 
-    if (indexOfPoem === -1){
+    if (!myPoem){
         res.status(404)
             .send(`Sorry, the poem with id ${singlePoemId} cannot be found`);
         return;
     }
 
-    poemsData[indexOfPoem] = updatedPoem;
+    poemsData[indexOfPoem] = {...myPoem, ...updatedPoem};
     writeData(poemsData);
     res.status(200)
-        .json(updatedPoem)
-
+        .json({poem: poemsData[indexOfPoem], indexOfPoem})
+    
 });
 
 

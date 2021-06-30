@@ -68,8 +68,11 @@ const DiscoverPoetry = () => {
                 id: currentPoem.id
             };
             // editCurrentPoem(currentPoem.id);
-            const res = await editPoem(currentPoem.id, newPoem)
-            console.log('Edit response: ', res)
+            const res = await editPoem(currentPoem.id, newPoem);
+            let newPoemsList = poemsList;
+            newPoemsList[res.data.indexOfPoem] = res.data.poem;
+            setPoemsList(newPoemsList);
+            // console.log('Edit response: ', res)
         } else {
             const newPoem = {
                 poemName,
